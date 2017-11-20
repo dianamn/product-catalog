@@ -9,7 +9,14 @@ if (!function_exists('current_user_can')) {
 }
 function show_product_options(){
     global $wpdb;
+    $query = "SELECT *  FROM " . $wpdb->prefix . "huge_it_catalog_product_params";
+    $rows = $wpdb->get_results($query);
     $param_values = array();
+    foreach ($rows as $row) {
+        $key = $row->name;
+        $value = $row->value;
+        $param_values[$key] = $value;
+    }
     return html_show_product_options($param_values);
 }
 

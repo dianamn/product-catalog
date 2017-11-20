@@ -1072,6 +1072,7 @@ else{
         jQuery(window).load(function(){
             $container.hugeitmicro('reLayout');
             jQuery(window).resize(function(){$container.hugeitmicro('reLayout');});
+            if (jQuery(".admin-bar")){ jQuery(".zoomContainer").css('margin-top','-30px'); }
         });
 
     });

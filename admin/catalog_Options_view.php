@@ -1,4 +1,6 @@
 <?php
+
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if (function_exists('current_user_can'))
     if (!current_user_can('delete_pages')) {
@@ -438,26 +440,26 @@ jQuery(document).ready(function () {
                                                     <ul id="arrows-type" style="background: #fff;width: 100%; padding-top: 12px;">
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view0_load_more_loading_icon'] == 1){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_1.gif" alt="" />
+                                                                <img src="<?php $path_site = plugins_url("/../images", __FILE__);echo $path_site; ?>/load_more_icon_1.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view0_load_more_loading_icon]" value="1" <?php if($param_values['htc_view0_load_more_loading_icon'] == 1){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view0_load_more_loading_icon'] == 2){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_2.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_2.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view0_load_more_loading_icon]" value="2" <?php if($param_values['htc_view0_load_more_loading_icon'] == 2){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view0_load_more_loading_icon'] == 3){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_3.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_3.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view0_load_more_loading_icon]" value="3" <?php if($param_values['htc_view0_load_more_loading_icon'] == 3){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
 
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view0_load_more_loading_icon'] == 4){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_4.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_4.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view0_load_more_loading_icon]" value="4" <?php if($param_values['htc_view0_load_more_loading_icon'] == 4){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
@@ -877,26 +879,26 @@ jQuery(document).ready(function () {
                                                     <ul id="arrows-type" style="background: #fff;width: 100%; padding-top: 12px;">
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view1_load_more_loading_icon'] == 1){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_1.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/load_more_icon_1.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view1_load_more_loading_icon]" value="1" <?php if($param_values['htc_view1_load_more_loading_icon'] == 1){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view1_load_more_loading_icon'] == 2){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_2.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_2.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view1_load_more_loading_icon]" value="2" <?php if($param_values['htc_view1_load_more_loading_icon'] == 2){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view1_load_more_loading_icon'] == 3){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_3.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_3.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view1_load_more_loading_icon]" value="3" <?php if($param_values['htc_view1_load_more_loading_icon'] == 3){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
 
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view1_load_more_loading_icon'] == 4){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_4.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_4.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view1_load_more_loading_icon]" value="4" <?php if($param_values['htc_view1_load_more_loading_icon'] == 4){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
@@ -1407,26 +1409,26 @@ jQuery(document).ready(function () {
                                                     <ul id="arrows-type" style="background: #fff;width: 100%; padding-top: 12px;">
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view2_load_more_loading_icon'] == 1){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_1.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_1.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view2_load_more_loading_icon]" value="1" <?php if($param_values['htc_view2_load_more_loading_icon'] == 1){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view2_load_more_loading_icon'] == 2){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_2.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_2.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view2_load_more_loading_icon]" value="2" <?php if($param_values['htc_view2_load_more_loading_icon'] == 2){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view2_load_more_loading_icon'] == 3){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_3.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_3.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view2_load_more_loading_icon]" value="3" <?php if($param_values['htc_view2_load_more_loading_icon'] == 3){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
 
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view2_load_more_loading_icon'] == 4){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_4.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_4.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view2_load_more_loading_icon]" value="4" <?php if($param_values['htc_view2_load_more_loading_icon'] == 4){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
@@ -1853,26 +1855,26 @@ jQuery(document).ready(function () {
                                                     <ul id="arrows-type" style="background: #fff;width: 100%; padding-top: 12px;">
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view3_load_more_loading_icon'] == 1){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_1.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_1.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view3_load_more_loading_icon]" value="1" <?php if($param_values['htc_view3_load_more_loading_icon'] == 1){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view3_load_more_loading_icon'] == 2){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_2.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_2.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view3_load_more_loading_icon]" value="2" <?php if($param_values['htc_view3_load_more_loading_icon'] == 2){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view3_load_more_loading_icon'] == 3){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_3.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_3.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view3_load_more_loading_icon]" value="3" <?php if($param_values['htc_view3_load_more_loading_icon'] == 3){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
 
                                                         <li onclick="jQuery(this).parent().find('li').removeClass('active');jQuery(this).parent().find('li').removeClass('activee');jQuery(this).addClass('active');" <?php if($param_values['htc_view3_load_more_loading_icon'] == 4){ echo "class='activee'"; } ?>>
                                                             <div class="image-block" style="width: 135px;height: 135px;">
-                                                                <img src="<?php echo $path_site; ?>/../../images/load_more_icon_4.gif" alt="" />
+                                                                <img src="<?php echo $path_site; ?>/../images/load_more_icon_4.gif" alt="" />
                                                             </div>
                                                             <input type="radio" name="params[htc_view3_load_more_loading_icon]" value="4" <?php if($param_values['htc_view3_load_more_loading_icon'] == 4){ echo 'checked="checked"'; } ?> style="width: 135px;height: 135px;">
                                                         </li>
